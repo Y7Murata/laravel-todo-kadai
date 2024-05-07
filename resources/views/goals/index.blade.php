@@ -75,16 +75,18 @@
  
                              <!-- ToDoの削除用モーダル -->
                              @include('modals.delete_todo')
-                             <h5 class="card-title ms-1 mb-0">
-                                 @if ($todo->done)
-                                  <s>{{ $todo->content }}</s>
-                                       @else
-                                         {{ $todo->content }}
-                                        @endif
-                                 </h5>                          
+                                                      
                              <div class="card mx-2 mb-2">
                                  <div class="card-body">
                                      <div class="d-flex justify-content-between align-items-center mb-2">
+                                         
+                                    <h5 class="card-title ms-1 mb-0">
+                                 　　　　　　　@if ($todo->done)
+                                  　　　　　　　　<s>{{ $todo->content }}</s>
+                                    @else
+                                    　　　{{ $todo->content }}
+                                    @endif
+                                　　　　　　　　　　</h5> 
                                          
                                          <div class="dropdown">
                                              <a href="#" class="dropdown-toggle px-1 fs-5 fw-bold link-dark text-decoration-none menu-icon" id="dropdownTodoMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">︙</a>
